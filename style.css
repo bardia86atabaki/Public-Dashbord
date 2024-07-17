@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+button {
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #261e35;
+}
+main {
+  width: 100%;
+  display: flex;
+}
+aside {
+  width: 6%;
+  height: 100vh;
+  border-right: 2px solid #8d8598;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.menu-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.hero {
+  width: 100%;
+  padding: 20px;
+  overflow: scroll;
+
+}
+.hero::-webkit-scrollbar{
+  display: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn {
+  background-color: #2f293e;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h2 {
+  color: white;
+}
+.search-box {
+  background-color: #2f293e;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.search-box input {
+  background-color: transparent;
+  color: #e2d8fd;
+  border: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+  caret-color: white;
+}
+input::placeholder {
+  color: #e2d8fd;
+}
+
+input::-ms-input-placeholder {
+  color: #e2d8fd;
+}
+.wing {
+  border: 1px solid #e2d8fd;
+  position: relative;
+}
+.wing::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border-radius: 100%;
+  background-color: #e9001c;
+}
+.notifs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.content {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  height: 300px;
+}
+.ban1 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(40deg, #ff7a7a, #2a0fd3);
+  border-radius: 20px;
+  position: relative;
+}
+.ban1 img {
+  width: 337px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 17px;
+}
+.txt {
+  padding: 30px;
+}
+.txt h3 {
+  color: white;
+  font-size: 15px;
+}
+.txt h1 {
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.txt p {
+  color: rgba(255, 255, 255, 0.779);
+  font-weight: 700;
+  margin-top: 15px;
+}
+.txt button {
+  color: #261b4c;
+  font-weight: 900;
+  border: none;
+  padding: 15px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 4px solid #261b4c;
+  margin-top: 30px;
+  background-color: transparent;
+  transition: 0.5s all;
+}
+.txt button:hover {
+  background-color: #261e35;
+  color: white;
+  cursor: pointer;
+}
+.ban2 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.216)
+  );
+  border: 2px solid rgba(255, 255, 255, 0.216);
+  border-radius: 20px;
+}
+.menu {
+  padding: 20px;
+}
+.toggle {
+  background-color: #1a111d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.toggle span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.days {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.days span {
+  background-color: #1a111d;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ban2 img {
+  width: 100%;
+  margin-top: 20px;
+}
+.crypto {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  gap: 20px;
+}
+.crypto::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  width: 100%;
+  min-width: 280px;
+  height: 200px;
+  background-color: #3c354a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid rgba(255, 255, 255, 0.529);
+  border-radius: 20px;
+  align-items: start;
+  padding: 30px;
+}
+.card img {
+  position: absolute;
+  top: -12%;
+  left: 40%;
+}
+.change {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.change div {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #868b93;
+}
+.change span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 700;
+  color: #00c287;
+}
+.card h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.card svg {
+  width: 100%;
+}
